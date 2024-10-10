@@ -14,8 +14,34 @@
 		64EAB3F52CB7EAA80086D81C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EAB3F42CB7EAA80086D81C /* Assets.xcassets */; };
 		64EAB3F82CB7EAA80086D81C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64EAB3F72CB7EAA80086D81C /* Base */; };
 		64EAB4012CB7EAD20086D81C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EAB4002CB7EAD20086D81C /* MainView.swift */; };
+		64EAB4192CB7F0690086D81C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EAB4182CB7F0690086D81C /* NotificationService.swift */; };
+		64EAB41D2CB7F0690086D81C /* pushExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 64EAB4162CB7F0690086D81C /* pushExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C22FA09E62D2B30D0BECFE2C /* Pods_CodeMagicTesteroid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179C8B39D96C2B28E67915D6 /* Pods_CodeMagicTesteroid.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64EAB41B2CB7F0690086D81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EAB3E02CB7EAA70086D81C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EAB4152CB7F0690086D81C;
+			remoteInfo = pushExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64EAB40E2CB7F0360086D81C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64EAB41D2CB7F0690086D81C /* pushExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		179C8B39D96C2B28E67915D6 /* Pods_CodeMagicTesteroid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeMagicTesteroid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +54,9 @@
 		64EAB3F72CB7EAA80086D81C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EAB3F92CB7EAA80086D81C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64EAB4002CB7EAD20086D81C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		64EAB4162CB7F0690086D81C /* pushExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pushExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EAB4182CB7F0690086D81C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		64EAB41A2CB7F0690086D81C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8981F0136A8DA3863D4F943C /* Pods-CodeMagicTesteroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeMagicTesteroid.release.xcconfig"; path = "Target Support Files/Pods-CodeMagicTesteroid/Pods-CodeMagicTesteroid.release.xcconfig"; sourceTree = "<group>"; };
 		B709C30E0FFE8A4B97CA48E9 /* Pods-CodeMagicTesteroid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeMagicTesteroid.debug.xcconfig"; path = "Target Support Files/Pods-CodeMagicTesteroid/Pods-CodeMagicTesteroid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64EAB4132CB7F0690086D81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				64EAB3EA2CB7EAA70086D81C /* CodeMagicTesteroid */,
+				64EAB4172CB7F0690086D81C /* pushExtension */,
 				64EAB3E92CB7EAA70086D81C /* Products */,
 				EEC5FAAE41503B2F3EBB4EB3 /* Pods */,
 				995C22D2BE238D3F21A3914D /* Frameworks */,
@@ -58,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				64EAB3E82CB7EAA70086D81C /* CodeMagicTesteroid.app */,
+				64EAB4162CB7F0690086D81C /* pushExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +113,15 @@
 				64EAB3F92CB7EAA80086D81C /* Info.plist */,
 			);
 			path = CodeMagicTesteroid;
+			sourceTree = "<group>";
+		};
+		64EAB4172CB7F0690086D81C /* pushExtension */ = {
+			isa = PBXGroup;
+			children = (
+				64EAB4182CB7F0690086D81C /* NotificationService.swift */,
+				64EAB41A2CB7F0690086D81C /* Info.plist */,
+			);
+			path = pushExtension;
 			sourceTree = "<group>";
 		};
 		995C22D2BE238D3F21A3914D /* Frameworks */ = {
@@ -106,15 +153,34 @@
 				64EAB3E52CB7EAA70086D81C /* Frameworks */,
 				64EAB3E62CB7EAA70086D81C /* Resources */,
 				261CCC9AA7B208A73F4368AB /* [CP] Embed Pods Frameworks */,
+				64EAB40E2CB7F0360086D81C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				64EAB41C2CB7F0690086D81C /* PBXTargetDependency */,
 			);
 			name = CodeMagicTesteroid;
 			productName = CodeMagicTesteroid;
 			productReference = 64EAB3E82CB7EAA70086D81C /* CodeMagicTesteroid.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64EAB4152CB7F0690086D81C /* pushExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EAB41E2CB7F0690086D81C /* Build configuration list for PBXNativeTarget "pushExtension" */;
+			buildPhases = (
+				64EAB4122CB7F0690086D81C /* Sources */,
+				64EAB4132CB7F0690086D81C /* Frameworks */,
+				64EAB4142CB7F0690086D81C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pushExtension;
+			productName = pushExtension;
+			productReference = 64EAB4162CB7F0690086D81C /* pushExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,6 +193,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					64EAB3E72CB7EAA70086D81C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					64EAB4152CB7F0690086D81C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -145,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				64EAB3E72CB7EAA70086D81C /* CodeMagicTesteroid */,
+				64EAB4152CB7F0690086D81C /* pushExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +227,13 @@
 				64EAB3F52CB7EAA80086D81C /* Assets.xcassets in Resources */,
 				64EAB3F82CB7EAA80086D81C /* Base in Resources */,
 				64EAB3F32CB7EAA70086D81C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EAB4142CB7F0690086D81C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +293,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64EAB4122CB7F0690086D81C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EAB4192CB7F0690086D81C /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64EAB41C2CB7F0690086D81C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EAB4152CB7F0690086D81C /* pushExtension */;
+			targetProxy = 64EAB41B2CB7F0690086D81C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64EAB3F12CB7EAA70086D81C /* Main.storyboard */ = {
@@ -361,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B709C30E0FFE8A4B97CA48E9 /* Pods-CodeMagicTesteroid.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
@@ -396,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8981F0136A8DA3863D4F943C /* Pods-CodeMagicTesteroid.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
@@ -427,6 +522,60 @@
 			};
 			name = Release;
 		};
+		64EAB41F2CB7F0690086D81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pushExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pushExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeMagicTesteroid.pushExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64EAB4202CB7F0690086D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pushExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pushExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeMagicTesteroid.pushExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +593,15 @@
 			buildConfigurations = (
 				64EAB3FD2CB7EAA80086D81C /* Debug */,
 				64EAB3FE2CB7EAA80086D81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EAB41E2CB7F0690086D81C /* Build configuration list for PBXNativeTarget "pushExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EAB41F2CB7F0690086D81C /* Debug */,
+				64EAB4202CB7F0690086D81C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
